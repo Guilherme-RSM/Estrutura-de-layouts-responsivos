@@ -27,11 +27,12 @@ body {
 header, nav, main, aside, footer {
     background: #a1a1a1;
     display: flex;
-    margin:3px;
+    margin: 3px;
 }
 
 header {
     flex: 1 1 100vw;
+    height: 100px;
 }
 
 nav {
@@ -40,6 +41,9 @@ nav {
 
 main {
     flex: 1 1 500px;
+
+    /*para que nao tenha rolamento vertical, deve ser utilizada a função calc ao definir a altura do main como 100vh - a soma da altura do header e do footer + a soma da margem aplicada entre os elementos. */
+    height: calc(100vh - 224px);
 }
 
 aside {
@@ -48,4 +52,5 @@ aside {
 
 footer {
     flex: 1 1 100vw;
+    height: 100px;
 }
