@@ -42,7 +42,7 @@ nav {
 main {
     flex: 1 1 500px;
 
-    /*para que nao tenha rolamento vertical, deve ser utilizada a função calc ao definir a altura do main como 100vh - a soma da altura do header e do footer + a soma da margem aplicada entre os elementos. */
+    /*para que nao tenha rolamento vertical, deve ser aplicada uma altura fixa para cada elemento porém será utilizada a função calc ao definir a altura do main como 100vh - a soma da altura do header e do footer + a soma da margem aplicada entre os elementos. */
     height: calc(100vh - 224px);
 }
 
@@ -54,3 +54,13 @@ footer {
     flex: 1 1 100vw;
     height: 100px;
 }
+
+/*Nessa regra será  verificado se a largura do dispositvo não é maior que 923px.*/
+/*caso positivo essa verificação, as propriedades adicionadas serão aplicadas no elemento especificado nessa regra*/
+@media only screen and (max-width:923px) {
+main {
+    height:calc(100vh - 330px);
+    background:red;
+}
+}
+
