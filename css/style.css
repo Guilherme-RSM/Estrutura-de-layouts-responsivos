@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+
+body {
+    display: flex;
+    margin: 3px;
+
+    /*flex-grow é a propriedade que define o fator de crescimento flexível de um item flexível.
+    flex-grow: 1;
+
+    /*flex-shrink é a propriedade que define o fator de redução flexível de um item flexível. */
+    flex-shrink: 1;
+
+    /*flex-basis é a propriedade que define o tamanho principal inicial de um item flexível*/
+    flex-basis: 100vw;
+
+    /*flex wrap deve ser aplicado no elmento pai para permitir a quebra de linha  entre os elementos quando não couberem na largura da tela*/
+    flex-wrap: wrap;
+}
+
+header, nav, main, aside, footer {
+    background: #a1a1a1;
+    display: flex;
+    margin:3px;
+}
+
+header {
+    flex: 1 1 100vw;
+}
+
+nav {
+    flex: 1 1 200px;
+}
+
+main {
+    flex: 1 1 500px;
+}
+
+aside {
+    flex: 1 1 200px;
+}
+
+footer {
+    flex: 1 1 100vw;
+}
