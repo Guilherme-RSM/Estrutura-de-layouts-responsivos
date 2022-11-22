@@ -1,0 +1,11 @@
+Media Queries
+
+As consultas de media, (Media Queries) podem ser utilizadas para alterar o estilo de um elemento
+quando a página atingir uma largura específica para que possam ser apresentadas de forma diferente 
+em diferentes tamanhos de telas e dispositivos.
+
+Elas também podem ser utilizadas para as seguintes finalidades:
+- Verificar a largura e altura da janela de visualização; (width e hight da viewport)
+- Verificar a largura e altura do dispositivo,
+- Checar Orientação da tela (se o dispositivo esta no modo paisagem ou retrato),
+- Checar a resolução da tela.
